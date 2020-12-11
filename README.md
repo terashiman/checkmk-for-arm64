@@ -1,12 +1,9 @@
-This is script to building checkmk for arm64/aarch4 machine.
+This is script to building [Checkmk](https://github.com/tribe29/checkmk) for arm64/aarch4 machine.
 
 Tested on Ubuntu 20.04 LTS, AWS EC2 t4g.medium.
 
-The sources of checkmk can be found here: https://github.com/tribe29/checkmk
-
 ### How to build
 
-    # build a specific version of checkmk
     $ INSTALL_DEPENDENCIES=1 bash build_check_mk.sh <version>
     e.g.) $ INSTALL_DEPENDENCIES=1 bash build_check_mk.sh 2.0.0b1
 
