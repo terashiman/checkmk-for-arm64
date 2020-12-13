@@ -7,7 +7,7 @@ if [ $# -gt 0 ]; then
   VERSION="$1"
 fi
 
-echo "building Check_MK ${VERSION}..."
+echo "building Checkmk ${VERSION}..."
 
 # get check_mk sources and build dependencies
 if [ ${INSTALL_DEPENDENCIES:-0} -eq 1 ]; then
