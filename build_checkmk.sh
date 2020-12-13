@@ -24,11 +24,9 @@ cd check-mk-raw-${VERSION}.cre
 
 # patch files
 patch -p0 < ../omd-Makefile-remove-module-navicli.patch
-#patch -p0 < ../omdlib-reduce-certificate-maximum-validity-period.patch
-#patch -p0 < ../python-make-add-fno-semantic-interposition.patch
 
 # prepare snap7
-wget -qO omd/packages/snap7/snap7-iot-arm-${SNAP7_VERSION}.tar.gz https://jaist.dl.sourceforge.net/project/snap7/Snap7-IoT/snap7-iot-arm/snap7-iot-arm-1.4.2.tar.gz
+wget -qO omd/packages/snap7/snap7-iot-arm-${SNAP7_VERSION}.tar.gz https://jaist.dl.sourceforge.net/project/snap7/Snap7-IoT/snap7-iot-arm/snap7-iot-arm-${SNAP7_VERSION}.tar.gz
 tar -xvzf omd/packages/snap7/snap7-iot-arm-${SNAP7_VERSION}.tar.gz -C omd/packages/snap7
 mv omd/packages/snap7/snap7-iot-arm-${SNAP7_VERSION} omd/packages/snap7/snap7-${SNAP7_VERSION}
 cp omd/packages/snap7/snap7-${SNAP7_VERSION}/build/unix/arm_v7_x64_linux.mk omd/packages/snap7/snap7-${SNAP7_VERSION}/build/unix/aarch64_linux.mk
