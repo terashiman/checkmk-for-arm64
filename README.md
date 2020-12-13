@@ -1,4 +1,4 @@
-This is script to building [Checkmk](https://github.com/tribe29/checkmk) for arm64/aarch4 machine.
+Script for building [Checkmk](https://github.com/tribe29/checkmk) that works with the most cost-effective EC2 instance type in AWS.
 
 Tested on Ubuntu 20.04 LTS, AWS EC2 t4g.medium.
 
@@ -16,6 +16,8 @@ Tested on Ubuntu 20.04 LTS, AWS EC2 t4g.medium.
 ### Patches
 
 #### Remove module navicli
+
+note: navicli is only released as a binary for the i386/x86_64 architecture, so it cannot be used on arm64 systems.
 
     cp omd/Makefile omd/Makefile_v2
     vim omd/Makefile_v2

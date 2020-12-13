@@ -42,7 +42,7 @@ sed -i -e 's: ./configure: cp -af /usr/share/misc/config.guess . \&\& ./configur
 sed -i -e 's: ./configure: cp -af /usr/share/misc/config.guess . \&\& ./configure:' ./omd/packages/pnp4nagios/pnp4nagios.make
 
 # compile and package
-make deb DEBFULLNAME="Christian Hofer" DEBEMAIL=chrisss404@gmail.com
+make deb
 
 # cleanup
 if [ $? -eq 0 ]; then
